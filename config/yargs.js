@@ -3,7 +3,7 @@ const argv = require('yargs')
                     alias: 'base',
                     demandOption: true,
                     type: 'number',
-                    describe: 'Es el numero a multiplicar'
+                    describe: 'Es el número a multiplicar'
                 })
                 .option('l', {
                     alias: 'listar',
@@ -17,7 +17,7 @@ const argv = require('yargs')
                     demandOption: false,
                     default: 10,
                     type: 'number',
-                    describe:'Numero hasta el cual se muestra la tabla'
+                    describe:'Número hasta el cual se muestra la tabla'
                 })
                 .check((argv, options)=>{
                     if( isNaN( argv.b )){
